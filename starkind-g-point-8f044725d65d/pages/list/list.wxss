@@ -1,0 +1,12 @@
+/* list.wxss */
+/* custom */
+
+.participant-avatar-wrapper {
+  padding: 11rpx;
+}
+
+.participant-avatar {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 48%;
+}

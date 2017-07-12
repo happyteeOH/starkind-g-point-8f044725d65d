@@ -1,0 +1,59 @@
+<!--detail.wxml-->
+<view class="page">
+  <view class="padding-rem detail-wrapper">
+    <view class="g-minheight bottom-gray-border detail-top-wrapper">
+      <view class="header-wrapper">
+        <image class="owner-avatar" src="{{event.owner.avatarUrl}}" mode="aspectFill" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url({{event.owner.userInfo.avatarUrl}});"></image>
+        <view class="header-text-wrapper">
+          <view class="title-wrapper">
+            <text class="g-block g-ellipse title-text">{{event.title}}</text>
+          </view>
+          <view class="type-wrapper">
+            <text class="tag g-block g-ellipse type-text">{{event.type}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="padding-halfrem description-wrapper">
+        <text>{{event.description}}</text>
+      </view>
+      <view class="padding-halfrem location-wrapper">
+        <image class="opaque icon" mode="aspectFit" src="../../resources/compass.png"></image>
+        <view class="middle-text-wrapper">
+          <text class="g-ellipse middle-text">{{event.eventInfo.location}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="bottom-gray-border detail-middle-wrapper">
+      <view class="right-gray-border middle-half-wrapper">
+        <image class="opaque icon middle-icon" mode="aspectFit" src="../../resources/star_outline.png"></image>
+        <view class="middle-text-wrapper">
+          <text class="g-ellipse middle-text">{{event.eventInfo.date}}</text>
+        </view>
+      </view>
+      <view class="middle-half-wrapper">
+        <image class="opaque icon middle-icon" mode="aspectFit" src="../../resources/bell_outline.png"></image>
+        <view class="middle-text-wrapper">
+          <text class="g-ellipse middle-text">{{event.eventInfo.time}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="g-minheight bottom-gray-border detail-bottom-wrapper">
+      <view class="padding-halfrem head-count-wrapper">
+        <text class="head-count-text">{{event.participants.length}}</text>
+        <text class="capacity-text"> /{{event.eventInfo.capacity}}</text>
+      </view>
+      <view class="participants-avatar-grid">
+        <view class="participant-avatar-wrapper" wx:for="{{event.participants}}" wx:for-item="participant" wx:key="nickname" nickname="{{participant.nickName}}">
+          <image class="participant-avatar" src="{{participant.avatarUrl}}" mode="aspectFit"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="padding-halfrem action-wrapper">
+    <button type="primary" size="default" bindtap="joinSpecEvent" data-id="{{event._id}}">Edit</button>
+  </view>
+
+  <view class="padding-halfrem action-wrapper">
+    <button type="primary" size="default" bindtap="deleteSpecEvent" data-id="{{event._id}}">Delete</button>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+{
+  "debug": true,
+  "pages": [
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/profile/profile",
+    "pages/create/create",
+    "pages/myList/myList",
+    "pages/index/index",
+    "pages/chat/chat",
+    "pages/myDetail/myDetail"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "聚点",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "列表",
+        "iconPath": "resources/star_outline.png",
+        "selectedIconPath": "resources/star.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "resources/portrait_outline.png",
+        "selectedIconPath": "resources/portrait.png"
+      }
+    ]
+  }
+}

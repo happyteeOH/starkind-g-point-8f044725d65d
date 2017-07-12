@@ -1,0 +1,118 @@
+/* detail.wxss */
+
+/* top */
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.owner-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 48%;
+}
+
+.header-text-wrapper {
+  margin-left: 10px;
+  flex: 1 1 0%;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title-text {
+  font-size: 40rpx;
+  font-weight: bold;
+  -webkit-line-clamp: 2;
+}
+
+.type-text {
+  font-size: 30rpx;
+  background-color: #b3b3b3;
+}
+
+.description-wrapper {
+  padding-top: 48rpx;
+}
+
+.location-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+/* middle */
+
+.detail-middle-wrapper {
+  min-height: 96rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.middle-half-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.middle-icon {
+  margin-left: 37.5rpx;
+}
+
+.middle-text-wrapper {
+  margin-left: 24rpx;
+}
+
+.middle-text {
+  font-size: 32rpx;
+  color: #8c8c8c;
+  -webkit-line-clamp: 1;
+}
+
+/* bottom */
+
+.detail-bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.capacity-text {
+  font-size: 24rpx;
+  color: #8c8c8c;
+}
+
+.participants-avatar-grid {
+  padding-bottom: 18.75rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.participant-avatar-wrapper {
+  padding: 11rpx;
+}
+
+.participant-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 48%;
+}
+
+/* action */

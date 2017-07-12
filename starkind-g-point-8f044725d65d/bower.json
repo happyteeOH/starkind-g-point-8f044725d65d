@@ -1,0 +1,25 @@
+{
+  "name": "g-point",
+  "authors": [
+    "wjq <wjq510@gmail.com>"
+  ],
+  "description": "appointment mini-program",
+  "main": "app.js",
+  "keywords": [
+    "g-point"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wafer-client-sdk": "^0.8.4"
+  }
+}

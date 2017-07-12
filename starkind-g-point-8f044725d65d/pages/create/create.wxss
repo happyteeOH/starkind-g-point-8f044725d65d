@@ -1,0 +1,44 @@
+/* create.wxss */
+
+.page {
+  height: 100%;
+}
+
+.title-wrapper {
+  font-size: 37.5rpx;
+  font-weight: bold;
+}
+
+.description-wrapper {
+  min-height: 96rpx;
+  flex-wrap: wrap;
+  font-size: 30rpx;
+  padding-left: 56.25rpx;
+  padding-right: 56.25rpx;
+}
+
+.field-wrapper {
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.field-wrapper text {
+  font-weight: normal;
+}
+
+.field-input-wrapper {
+  width: 80%;
+}
+
+.middle-text-wrapper {
+  margin-left: 24rpx;
+}
+
+.icon {
+  width: 48rpx;
+  height: 48rpx;
+}

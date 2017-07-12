@@ -1,0 +1,35 @@
+<view class="page">
+  <scroll-view class='event-list' scroll-y scroll-top="99999999">
+    <view class="g-minheight bottom-gray-border" wx:for="{{events}}" wx:for-item="event" wx:key="id" id="{{event._id}}">
+      <navigator class="padding-halfrem listitem-navigator" url="../detail/detail?id={{event._id}}" hover-class="navigator-hover">
+        <image class="listitem-avatar" src="{{event.owner.userInfo.avatarUrl}}" mode="aspectFit"></image>
+        <view class="listitem-main-wrapper">
+          <text class="g-block g-ellipse listitem-main-title">{{event.eventInfo.title}}</text>
+        </view>
+      </navigator>
+
+      <view class="padding-halfrem listitem-secondary-wrapper">
+        <view class="listitem-left-wrapper">
+          <view class="listitem-info-wrapper">
+            <image class="opaque listitem-info-icon" mode="aspectFit" src="../../resources/portrait_outline.png"></image>
+            <text class="g-ellipse listitem-info-text">{{event.eventInfo.capacity}}</text>
+          </view>
+
+          <view class="listitem-info-wrapper">
+            <image class="opaque listitem-info-icon" mode="aspectFit" src="../../resources/bell_outline.png"></image>
+            <text class="g-ellipse listitem-info-text">{{event.eventInfo.time}}</text>
+          </view>
+          <view class="listitem-info-wrapper">
+            <image class="opaque listitem-info-icon" mode="aspectFit" src="../../resources/compass_outline.png"></image>
+            <text class="g-ellipse listitem-info-text">{{event.eventInfo.location}}</text>
+          </view>
+        </view>
+        <text class="g-ellipse listitem-right-text">刚刚</text>
+      </view>
+    </view>
+
+
+
+  </scroll-view>
+</view>
+

@@ -1,0 +1,43 @@
+/* profile.wxss */
+.page {
+  background: #ECEFF1;
+  height: 100%;
+}
+
+.userinfo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.profile-navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.create-navigator-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+#create-event {
+  margin-left: 18.75rpx;
+}
+
+.my-events-wrapper {
+  margin-top: 37.5rpx;
+}
+
+#my-events {
+  font-weight: bold;
+}

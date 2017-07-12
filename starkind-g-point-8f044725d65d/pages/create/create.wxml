@@ -1,0 +1,67 @@
+<!--create.wxml-->
+<view class="page">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="padding-rem bottom-gray-border title-wrapper">
+      <input name="title" placeholder="号召力感人的标题" />
+    </view>
+    <view class="padding-rem bottom-gray-border description-wrapper">
+      <textarea name="description" placeholder="如果不把这里填满就不算合格的描述..." />
+    </view>
+    <view class="bottom-gray-border">
+      <view class="field-wrapper">
+        <text class="padding-rem">地点</text>
+        <view class="padding-rem bottom-gray-border field-input-wrapper">        
+          <text name="location" value="{{location}}" bindtouchend="testTencentMap" >         
+          :{{location}}
+          </text>
+        </view>
+      </view>
+      
+      <view class="field-wrapper">
+        <text class="padding-rem">日期</text>
+        <view class="padding-rem bottom-gray-border field-input-wrapper" >
+          <picker mode="date" name="date" value="{{date}}" bindchange="bindDateChange" >
+           :{{date}}
+          </picker>
+        </view>
+      </view>
+      
+      <view class="field-wrapper">
+        <text class="padding-rem">时间</text>
+        <view class="padding-rem bottom-gray-border field-input-wrapper">
+          <picker mode="time" name="time" value="{{time}}" bindchange="bindTimeChange">
+           :{{time}}
+          </picker>
+        </view>
+      </view>
+
+      <view class="field-wrapper">
+        <text class="padding-rem">人数</text>
+        <view class="padding-rem field-input-wrapper">
+          <slider name="capacity" min="2" max="50" show-value />
+        </view>
+      </view>
+    </view>
+
+    <view class="padding-rem action-wrapper">
+      <button type="primary" class="create-button" form-type="submit" bindtap="navigateTo">创建</button>      
+    </view>
+
+    <view class="padding-rem action-wrapper">
+      <button type="primary" formType="reset">Reset</button>
+    </view>
+
+
+    
+  </form>
+
+
+
+<!--    <view class="page_bd">
+      <modal confirm-text="Submit" cancel-text="Cancel" hidden="{{modalHidden}}" bindconfirm = "modalConfirm" bindcancel="modalCancel">
+  Are U sure to submit?
+      </modal>
+    </view>
+    -->
+</view>
+
